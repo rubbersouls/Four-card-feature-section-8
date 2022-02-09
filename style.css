@@ -1,0 +1,192 @@
+:root{
+	--color1 : #4C4B51;
+	--color2 : #A3A2A7;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+	background-color: #FAFAFA;
+	background-size: 100vh, 100vh;
+	overflow-y: hidden; 
+}
+
+main{
+  	min-height: 100vh;
+}
+
+.box:nth-child(1){
+	height: 221px;
+	width: 1110px;
+	margin: 91px auto 0 auto;
+  	text-align: center;
+}
+
+.box:nth-child(1)>h2{
+	font-weight: normal;
+	font-size: 2.4em;
+	color: var(--color2);
+}
+
+.box:nth-child(1)>h1{
+	font-size: 2.4em;
+	color: var(--color1);
+	padding-bottom: 17px;
+}
+
+.box:nth-child(1)>p{
+	color: var(--color2);
+	padding-bottom: 10px;
+}
+
+.box:nth-child(2){
+	height: 536px;
+	width: 1110px;
+	margin: 0px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cadre:nth-child(1){
+	height: 250px;
+	width: 350px;
+	margin-top: 140px;
+}
+
+.boxcadre{
+	margin: 0 30px;
+	width: 350px;
+	overflow: hidden;
+}
+
+.cadrein:nth-child(1){
+	height: 250px;
+	width: 350px;
+	margin-bottom: 30px;
+}
+
+.cadrein:nth-child(2){
+	height: 250px;
+	width: 350px;
+}
+
+.cadre:nth-child(3){
+	height: 250px;
+	width: 350px;
+	margin-top: 140px;
+}
+
+.cadre, .cadrein{
+	background-color: #FFF;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.bandeaux{
+	height: 4px;
+	width: 100%;
+}
+
+.cadre:nth-child(1)>.bandeaux{
+	background-color:#5BC9C8;
+}
+
+.cadrein:nth-child(1)>.bandeaux{
+	background-color:#D0605E;
+}
+
+.cadrein:nth-child(2)>.bandeaux{
+	background-color:#FBAD4B;
+}
+
+.cadre:nth-child(3)>.bandeaux{
+	background-color:#529FF1;
+}
+
+.reglage{
+	margin: 35px 91px 0 34px;
+}
+
+.reglage>h1{
+	font-size: 1.2em;
+	color: var(--color1);	
+}
+
+.reglage>p{
+	margin-top: 18px;
+	font-size: 0.9em;
+	line-height: 24px;
+	color: var(--color2);	
+}
+
+.cadre>img, .cadrein>img{
+	padding-top: 20px;
+	padding-left: 254px;
+}
+
+@media(max-width: 1150px){
+
+
+body{
+	overflow-y: scroll; 
+}
+
+.box:nth-child(1), .box:nth-child(2){
+	width: 311px;
+}	
+
+.box:nth-child(1){
+	margin: 0 auto 0 auto;
+  	text-align: center;
+	margin-top: 91px;
+	height: 160px;
+}
+
+.boxcadre{
+	width: 100%;
+	margin: 0;
+
+}
+
+.box:nth-child(1)>h2{
+	text-align: start;
+	font-size: 1.7em;
+}
+
+.box:nth-child(1)>h1{
+	font-size: 1.7em;
+}
+
+.box:nth-child(1)>p{
+	padding-bottom: 2px;
+	font-size: 1.1em;
+}
+
+.cadre:nth-child(1){
+	margin-top: 60px;
+}
+
+.cadrein:nth-child(1){
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.cadre:nth-child(3){
+	margin-top: 30px;
+}
+
+.cadre>img, .cadrein>img{
+	padding-left: 230px;
+}
+
+.box:nth-child(2){
+	height: 100%;
+	margin-bottom: 30px;
+}
+
+}
